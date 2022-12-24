@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+type TestInt int
+
+func main() {
+	var i TestInt
+	var j int
+	i = TestInt(4)
+	j = 4
+
+	fmt.Println(reflect.TypeOf(i))
+	fmt.Println(reflect.TypeOf(j))
+}
